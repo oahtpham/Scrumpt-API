@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
   private
 
   def comment_params
-    params.permit(:name)
+    params.permit(:comment)
   end
 
   def find_comment

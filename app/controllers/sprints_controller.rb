@@ -21,7 +21,7 @@ class SprintsController < ApplicationController
   private
 
   def sprint_params
-    params.permit(:name)
+    params.permit(:sprint_name, :deadline, :color)
   end
 
   def find_sprint
