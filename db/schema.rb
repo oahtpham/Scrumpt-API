@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 2019_02_08_151507) do
     t.string "sprint_name"
     t.datetime "deadline"
     t.string "color"
+    t.boolean "display"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
