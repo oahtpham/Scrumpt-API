@@ -4,7 +4,7 @@ class CreateSprints < ActiveRecord::Migration[5.2]
       t.string :sprint_name
       t.datetime :deadline
       t.string :color
-
+      t.boolean :display
       t.timestamps
     end
   end
