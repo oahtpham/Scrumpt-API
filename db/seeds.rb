@@ -55,8 +55,8 @@ user4 = User.create(name: "Isaac")
 user5 = User.create(name: "Mike")
 #SPRINT SEEDS
 sprint1 = Sprint.create(sprint_name: "hijack spotify api", deadline: "2019-02-15", color: "blue", display: false)
-sprint2 = Sprint.create(sprint_name: "get rid of Thao", deadline: "2019-02-15", color: "red", display: false)
-sprint3 = Sprint.create(sprint_name: "face recognition", deadline: "2019-02-15", color: "yellow", display: false)
+sprint2 = Sprint.create(sprint_name: "get rid of Thao", deadline: "2019-03-16", color: "red", display: false)
+sprint3 = Sprint.create(sprint_name: "face recognition", deadline: "2019-05-01", color: "yellow", display: false)
 #STAGE SEEDS
 stage1 = Stage.create(stage_order: 1, stage_name: "Icebox")
 stage2 = Stage.create(stage_order: 2, stage_name: "Emergency")
