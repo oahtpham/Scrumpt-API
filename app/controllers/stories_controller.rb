@@ -21,7 +21,7 @@ class StoriesController < ApplicationController
   private
 
   def story_params
-    params.permit(:title, :description)
+    params.require(:story).permit(:title, :description, :stage_id, :sprint_id, :user_id)
   end
 
   def find_story
