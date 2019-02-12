@@ -18,6 +18,16 @@ class StoriesController < ApplicationController
     end
   end
 
+  def show
+    find_story
+    render json: @story
+  end
+
+  def destroy
+    find_story
+    Story.all.delete(@story)
+  end
+
   private
 
   def story_params

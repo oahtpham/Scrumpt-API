@@ -18,10 +18,20 @@ class SprintsController < ApplicationController
     end
   end
 
+  def show
+    find_sprint
+    render json: @sprint
+  end
+
+  def destroy
+    find_sprint
+    Sprint.all.delete(@sprint)
+  end
+
   private
 
   def sprint_params
-    params.permit(:sprint_name, :deadline, :color)
+    params.permit(:sprint_name, :deadline, :color, :description)
   end
 
   def find_sprint

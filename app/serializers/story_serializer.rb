@@ -1,5 +1,5 @@
 class StorySerializer < ActiveModel::Serializer
-  attributes :id, :description, :title, :stage_id
+  attributes :id, :description, :title, :stage_id, :sprint_id
   belongs_to :user
   belongs_to :sprint
   belongs_to :stage

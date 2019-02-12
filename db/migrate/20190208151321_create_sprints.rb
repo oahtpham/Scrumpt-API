@@ -3,6 +3,7 @@ class CreateSprints < ActiveRecord::Migration[5.2]
     create_table :sprints do |t|
       t.string :sprint_name
       t.datetime :deadline
+      t.text :description
       t.string :color
       t.boolean :display
       t.timestamps
