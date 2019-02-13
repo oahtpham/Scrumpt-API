@@ -10,6 +10,7 @@ class SprintsController < ApplicationController
   end
 
   def update
+    @sprint = find_sprint
     @sprint.update(sprint_params)
     if @sprint.save
       render json: @sprint, status: :accepted
@@ -31,7 +32,7 @@ class SprintsController < ApplicationController
   private
 
   def sprint_params
-    params.permit(:sprint_name, :deadline, :color, :description)
+    params.require(:sprint).permit(:sprint_name, :deadline, :color, :description)
   end
 
   def find_sprint
