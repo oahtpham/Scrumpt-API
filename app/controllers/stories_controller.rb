@@ -23,6 +23,12 @@ class StoriesController < ApplicationController
     render json: @story
   end
 
+  def update
+    find_story
+    @story.update(story_params)
+    render json: @story
+  end
+
   def destroy
     find_story
     Story.all.delete(@story)
