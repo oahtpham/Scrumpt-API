@@ -10,6 +10,7 @@ class StoriesController < ApplicationController
   end
 
   def update
+    @story = find_story
     @story.update(story_params)
     if @story.save
       render json: @story, status: :accepted
